@@ -2,11 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 export default function Cart() {
-  return (
-    <div>
-      from cart componnet
-    </div>
-  )
     const userId=localStorage.getItem("userId")
     const [cartItems,setCartItems]=useState([])
     const [loading,setLoading]=useState(true)
